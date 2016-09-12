@@ -1,10 +1,13 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <div class="container">
-        <h1>Hello {{user.full_name}}</h1>
-        <p>
-            Your username is {{user.username}}
-        </p>
+    <div class="well"> <!-- bootstrap .well-->
+        Lorem ipsum {{ lorem_text }}
     </div>
+    <a 
+	    href="{{ url_for('index') }}"
+	    class="btn btn-danger btn-lg btn-block"
+	    >
+	    FARTU GxIN!
+    </a>
 {% endblock %}
